@@ -19,7 +19,7 @@ async function currentAuthenticatedUser() {
 
 Amplify.configure(awsExports)
 
-export default function LivenessQuickStartReact() {
+export default function TestComponent() {
   const [loading, setLoading] = React.useState(true)
   const [sessionID, setSessionID] = React.useState(null)
 
