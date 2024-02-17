@@ -10,10 +10,11 @@ import { getCurrentUser } from "aws-amplify/auth"
 
 async function currentAuthenticatedUser() {
   try {
-    const { username, userId, signInDetails } = await getCurrentUser()
-    return { username: username || "", userId: userId || "", signInDetails: signInDetails || "" }
+    const data = await getCurrentUser()
+    return data
   } catch (err) {
     console.log(err)
+    return null
   }
 }
 
@@ -25,8 +26,8 @@ export default function TestComponent() {
 
   React.useEffect(() => {
     const fetchCreateLiveness = async () => {
-      const { username, userId } = await currentAuthenticatedUser()
-      if (username && userId) {
+      const userData = await currentAuthenticatedUser()
+      if (userData && userData?.username && userData?.userId) {
         const response = await axios.get(`https://4cskcoalj3.execute-api.us-east-1.amazonaws.com/dev/start-liveliness`)
         setSessionID(response?.data?.sessionID)
         setLoading(false)
