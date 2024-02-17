@@ -1,12 +1,13 @@
 import React from "react"
 import { FaceLivenessDetector } from "@aws-amplify/ui-react-liveness"
 import { Loader, ThemeProvider } from "@aws-amplify/ui-react"
-import axios from "axios"
+// import axios from "axios"
 import { Amplify, Auth } from "aws-amplify"
 import awsExports from "../aws-exports" // The path might vary based on your setup
 import { Authenticator } from "@aws-amplify/ui-react"
 import "@aws-amplify/ui-react/styles.css"
 import { getCurrentUser } from "aws-amplify/auth"
+const axios = require('axios').default;
 
 
 async function currentAuthenticatedUser() {
