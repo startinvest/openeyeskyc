@@ -1,2 +1,3 @@
 import TextInput from "./TextInput/TextInput";
-export { TextInput };
+import TestComponent from "./TestComponent";
+export { TextInput, TestComponent };
