@@ -8,6 +8,7 @@ import { Authenticator } from "@aws-amplify/ui-react"
 import "@aws-amplify/ui-react/styles.css"
 import { getCurrentUser } from "aws-amplify/auth"
 
+
 async function currentAuthenticatedUser() {
   try {
     const data = await getCurrentUser()
