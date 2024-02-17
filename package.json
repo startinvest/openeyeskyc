@@ -10,7 +10,7 @@
     "url": "https://github.com/startinvest/openeyeskyc.git"
   },
   "name": "openeyeskyc",
-  "version": "0.1.0",
+  "version": "0.1.8",
   "private": false,
   "dependencies": {
     "@aws-amplify/ui-react-liveness": "^3.0.12",
