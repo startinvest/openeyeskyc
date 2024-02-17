@@ -10,10 +10,11 @@
     "url": "https://github.com/startinvest/openeyeskyc.git"
   },
   "name": "openeyeskyc1",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "private": false,
   "dependencies": {
     "@aws-amplify/ui-react-liveness": "^3.0.12",
+    "@babel/runtime-corejs3": "^7.23.9",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
