@@ -1,0 +1,7 @@
+:root {
+    --react-international-phone-font-size: 16px;
+}
+
+.custom-phone-input::placeholder {
+    color: #888;
+}

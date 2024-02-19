@@ -5,13 +5,12 @@
 
 import React from "react"
 import { render } from "react-dom"
-import { TextInput, TestComponent } from "./lib"
+import { Step1, Step2, MultiStepForm } from "./lib"
 
 const App = () => (
   <div style={{ width: 640, margin: "15px auto" }}>
     <h1>Hello React</h1>
-    <TextInput label='Email Address' placeholder='name@example.com' />
-    <TestComponent />
+    <Step2 />
   </div>
 )
 
